@@ -1,8 +1,15 @@
-<style>
+    body{
+      font-size: 3vw;
+    }
+
     #top{
         display: grid;
         grid-template-columns: 4fr 7fr 4fr;
-        height: 30px;
+        height: 8vw;
+        min-height: 8vw;
+
+        border-bottom: solid gray 0.1px;
+        margin-bottom: 10px;
     }
     #top img{
         margin-left: auto;
@@ -26,34 +33,41 @@
         border: solid gray 1px;
         border-radius: 3px;
 
-        font-size: 10px;
-        font-weight: 30;
+        font-size: 3vw;
+        font-weight: 100;
     }
-    
+    #top i{
+      font-size: 4vw;
+    }
+    #top div{
+      text-align: center;
+      padding-top: 2vw;
+    }
+
     .highlight {
         text-align: center;
     }
     #profile {
         display: grid;
         grid-template-columns: 1fr 3.5fr;
+
+        margin-bottom: 15px;
     }
     #profile_pic{
-        width: 50px;
-        height: 50px;
+        width: 15vw;
+        height: 15vw;
     }    
     #prifile_info{
         display: grid;
         grid-template-rows: 1fr 1fr;
 
-        height: 50px;
+        height: 15vw;
     }
 
     .thumbnails {
         width: 100%;
         height: 100%;
         object-fit: cover;
-
-        
     }    
     .thumbnail_grid {
         display:grid;
@@ -74,16 +88,29 @@
         text-align: center;
     }
 
+    #sub_icons{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+      text-align: center;
+      font-size: 5vw;
+
+      height: 8vw;
+    }
+    .selected{
+      border-bottom: solid gray 3px;
+    }
+
     .highlight_pic{
-        width: 35px;
-        height: 35px;
+        width: 10vw;
+        height: 10vw;
 
         margin-left: auto;
         margin-right: auto;
     }
     #highlight_area{
         display: grid;
-        grid-template-columns: 45px 45px 1fr;
+        grid-template-columns: 12vw 12vw 1fr;
     }
 
     .circle_pic{
@@ -95,19 +122,15 @@
         object-fit: cover;
     }    
     #id{
-        font-size: 18px;
+        font-size: 6vw;
         font-weight: 100;
     }
     button{
         height: 50%;
         width: 95%;
 
-        font-size: 10px;
+        font-size: 3vw;
         background-color: white;
         border: solid gray 1px;
         border-radius: 3px;
     }
-    .ex{
-        margin-top: 15px;
-    }
-</style>
